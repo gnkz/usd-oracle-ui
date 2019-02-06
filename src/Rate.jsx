@@ -11,7 +11,7 @@ const Rate = ({ usdPrice, timestamp, hasIncreased, clock }) => (
   <div className={`rate ${className(hasIncreased)}`}>
     <div className="rate-box">
       <h1 className="rate-heading">
-        { usdPrice ? <span className="rate-heading-value">{ usdPrice } USD</span> : null }
+        { usdPrice ? <span className="rate-heading-value">{ parseFloat(usdPrice / 100).toFixed(2) } USD</span> : null }
         { timestamp ? <span className="rate-heading-time">{ distanceInWords(clock, timestamp, { addSuffix: true }) }</span> : null }
       </h1>
     </div>
