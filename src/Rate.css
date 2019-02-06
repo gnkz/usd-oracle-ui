@@ -1,0 +1,40 @@
+.rate {
+  position: relative;
+  height: 100vh;
+  color: #eee;
+}
+
+.rate-bg-increased {
+  background-image: linear-gradient(to left bottom, #8BC34A, #33691E);
+}
+
+.rate-bg-decreased {
+  background-image: linear-gradient(to left bottom, #f44336, #b71c1c);
+}
+
+.rate-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rate-box span {
+  display: block;
+}
+
+.rate-heading {
+  text-align: center;
+}
+
+.rate-heading-value {
+  font-size: 60px;
+  letter-spacing: 15px;
+  margin-right: -15px;
+}
+
+.rate-heading-time {
+  font-size: 30px;
+  letter-spacing: 10px;
+  margin-right: -10px;
+}
