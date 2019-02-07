@@ -9,7 +9,7 @@ export const rateReducer = (state = {}, action) => {
           clock: new Date(),
       });
 
-    case types.UPDATE_RATE:
+    case types.UPDATE_RATE: {
       const oneEth = utils.bigNumberify("0xde0b6b3a7640000");
       const usdPrice = oneEth.div(action.rate).toNumber();
 
@@ -25,6 +25,7 @@ export const rateReducer = (state = {}, action) => {
         timestamp: new Date(action.timestamp.toNumber() * 1000),
         hasIncreased,
       });
+    }
     default:
       return state;
   }
