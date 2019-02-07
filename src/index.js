@@ -20,7 +20,7 @@ Promise.all([
 
 setInterval(() => {
   store.dispatch(updateClock());
-}, 30000);
+}, 5000);
 
 contract.on("RateUpdated", (rate, updatedAt) => {
   store.dispatch(updateClock());

@@ -2,10 +2,8 @@
   position: relative;
   height: 100vh;
   color: #eee;
-}
-
-.rate-bg-increased {
   background-image: linear-gradient(to left bottom, #8BC34A, #33691E);
+  transition: background-image 1s linear;
 }
 
 .rate-bg-decreased {
@@ -21,6 +19,7 @@
 
 .rate-box span {
   display: block;
+  text-transform: uppercase;
 }
 
 .rate-heading {
