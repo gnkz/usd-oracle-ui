@@ -22,7 +22,7 @@ const Rate = ({ usdPrice, timestamp, hasIncreased, clock }) => {
 
 Rate.propTypes = {
   usdPrice: PropTypes.number.isRequired,
-  timestamp: PropTypes.instanceOf(Date).isRequired,
+  timestamp: PropTypes.instanceOf(Date),
   hasIncreased: PropTypes.bool.isRequired,
   clock: PropTypes.instanceOf(Date).isRequired,
 };
